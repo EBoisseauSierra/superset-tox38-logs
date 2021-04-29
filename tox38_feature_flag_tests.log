@@ -1,0 +1,308 @@
+py38 develop-inst-nodeps: /home/fedora/superset
+py38 installed: aiohttp==3.7.2,alembic==1.4.3,amqp==2.6.1,-e git+git@github.com:apache/superset.git@99797911bdbfff630ef90c6ec1ecf93f4e3fe222#egg=apache_superset,apispec==3.3.2,appdirs==1.4.4,appnope==0.1.0,astroid==2.4.2,async-timeout==3.0.1,attrs==20.2.0,Babel==2.8.0,backcall==0.2.0,backoff==1.10.0,billiard==3.6.3.0,bleach==3.2.1,boto3==1.16.10,botocore==1.19.10,Brotli==1.0.9,cached-property==1.5.2,cachelib==0.1.1,celery==4.4.7,certifi==2020.6.20,cffi==1.14.3,cfgv==3.2.0,chardet==3.0.4,click==7.1.2,colorama==0.4.4,contextlib2==0.6.0.post1,convertdate==2.3.0,coverage==5.3,cron-descriptor==1.2.24,croniter==0.3.36,cryptography==3.2.1,decorator==4.4.2,defusedxml==0.6.0,Deprecated==1.2.11,distlib==0.3.1,dnspython==2.0.0,docker==4.3.1,email-validator==1.1.1,et-xmlfile==1.0.1,filelock==3.0.12,Flask==1.1.2,Flask-AppBuilder==3.1.1,Flask-Babel==1.0.0,Flask-Caching==1.9.0,Flask-Compress==1.8.0,Flask-Cors==3.0.9,Flask-JWT-Extended==3.24.1,Flask-Login==0.4.1,Flask-Migrate==2.5.3,Flask-OpenID==1.2.5,Flask-SQLAlchemy==2.4.4,flask-talisman==0.7.0,Flask-Testing==0.8.0,Flask-WTF==0.14.3,freezegun==1.0.0,future==0.18.2,geographiclib==1.50,geopy==2.0.0,gunicorn==20.0.4,holidays==0.10.3,humanize==3.1.0,identify==1.5.9,idna==2.10,ijson==3.1.2.post0,importlib-metadata==2.1.1,iniconfig==1.1.1,ipdb==0.13.4,ipython==7.16.1,ipython-genutils==0.2.0,isodate==0.6.0,isort==5.6.4,itsdangerous==1.1.0,jdcal==1.4.1,jedi==0.17.2,Jinja2==2.11.3,jmespath==0.10.0,jsonlines==1.2.0,jsonschema==3.2.0,kombu==4.6.11,korean-lunar-calendar==0.2.1,lazy-object-proxy==1.4.3,linear-tsv==1.1.0,Mako==1.1.3,Markdown==3.3.3,MarkupSafe==1.1.1,marshmallow==3.9.0,marshmallow-enum==1.5.1,marshmallow-sqlalchemy==0.23.1,mccabe==0.6.1,msgpack==1.0.0,multidict==5.0.0,mysqlclient==1.4.2.post1,natsort==7.0.1,nodeenv==1.5.0,numpy==1.19.4,openapi-spec-validator==0.2.9,openpyxl==3.0.5,packaging==20.4,pandas==1.2.2,parameterized==0.7.4,parsedatetime==2.6,parso==0.7.1,pathlib2==2.3.5,pexpect==4.8.0,pgsanity==0.2.9,pickleshare==0.7.5,Pillow==7.2.0,pip-compile-multi==2.1.0,pip-tools==5.3.1,pluggy==0.13.1,polyline==1.4.0,pre-commit==2.8.2,prison==0.1.3,prompt-toolkit==3.0.8,psycopg2-binary==2.8.5,ptyprocess==0.6.0,py==1.9.0,pyarrow==3.0.0,pycparser==2.20,pydruid==0.6.1,PyGithub==1.54.1,Pygments==2.7.2,PyHive==0.6.3,PyJWT==1.7.1,pylint==2.6.0,PyMeeus==0.3.7,pyparsing==2.4.7,pyrsistent==0.16.1,pytest==6.1.2,pytest-cov==2.10.1,python-dateutil==2.8.1,python-dotenv==0.15.0,python-editor==1.0.4,python-geohash==0.8.5,python3-openid==3.2.0,pytz==2020.4,PyYAML==5.3.1,redis==3.5.3,requests==2.24.0,retry==0.9.2,rfc3986==1.4.0,s3transfer==0.3.3,sasl==0.2.1,selenium==3.141.0,simplejson==3.17.2,six==1.15.0,slackclient==2.5.0,SQLAlchemy==1.3.20,SQLAlchemy-Utils==0.36.8,sqlparse==0.3.0,statsd==3.3.0,tableschema==1.20.0,tabulator==1.52.5,thrift==0.13.0,thrift-sasl==0.4.2,toml==0.10.2,toposort==1.5,tox==3.20.1,traitlets==5.0.5,typed-ast==1.4.1,typing-extensions==3.7.4.3,unicodecsv==0.14.1,urllib3==1.25.11,vine==1.3.0,virtualenv==20.1.0,wcwidth==0.2.5,webencodings==0.5.1,websocket-client==0.57.0,Werkzeug==1.0.1,wrapt==1.12.1,WTForms==2.3.3,WTForms-JSON==0.3.3,xlrd==1.2.0,yarl==1.6.2,zipp==3.4.0
+py38 run-test-pre: PYTHONHASHSEED='2366005843'
+py38 run-test: commands[0] | superset db upgrade
+SQLite Database support for metadata databases will be removed in a future version of Superset.
+logging was configured successfully
+INFO:superset.utils.logging_configurator:logging was configured successfully
+WARNI [alembic.env] SQLite Database support for metadata databases will         be removed in a future version of Superset.
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 4e6a06bad7a8, Init
+INFO  [alembic.runtime.migration] Running upgrade 4e6a06bad7a8 -> 5a7bad26f2a7, empty message
+INFO  [alembic.runtime.migration] Running upgrade 5a7bad26f2a7 -> 1e2841a4128, empty message
+INFO  [alembic.runtime.migration] Running upgrade 1e2841a4128 -> 2929af7925ed, TZ offsets in data sources
+INFO  [alembic.runtime.migration] Running upgrade 2929af7925ed -> 289ce07647b, Add encrypted password field
+INFO  [alembic.runtime.migration] Running upgrade 289ce07647b -> 1a48a5411020, adding slug to dash
+INFO  [alembic.runtime.migration] Running upgrade 1a48a5411020 -> 315b3f4da9b0, adding log model
+INFO  [alembic.runtime.migration] Running upgrade 315b3f4da9b0 -> 55179c7f25c7, sqla_descr
+INFO  [alembic.runtime.migration] Running upgrade 55179c7f25c7 -> 12d55656cbca, is_featured
+/home/fedora/superset/.tox/py38/lib/python3.8/site-packages/alembic/ddl/sqlite.py:43: UserWarning: Skipping unsupported ALTER for creation of implicit constraintPlease refer to the batch mode feature which allows for SQLite migrations using a copy-and-move strategy.
+  util.warn(
+INFO  [alembic.runtime.migration] Running upgrade 12d55656cbca -> 2591d77e9831, user_id
+INFO  [alembic.runtime.migration] Running upgrade 2591d77e9831 -> 8e80a26a31db, empty message
+INFO  [alembic.runtime.migration] Running upgrade 8e80a26a31db -> 7dbf98566af7, empty message
+INFO  [alembic.runtime.migration] Running upgrade 7dbf98566af7 -> 43df8de3a5f4, empty message
+INFO  [alembic.runtime.migration] Running upgrade 43df8de3a5f4 -> d827694c7555, css templates
+INFO  [alembic.runtime.migration] Running upgrade d827694c7555 -> 430039611635, log more
+INFO  [alembic.runtime.migration] Running upgrade 430039611635 -> 18e88e1cc004, making audit nullable
+INFO  [alembic.runtime.migration] Running upgrade 18e88e1cc004 -> 836c0bf75904, cache_timeouts
+INFO  [alembic.runtime.migration] Running upgrade 18e88e1cc004 -> a2d606a761d9, adding favstar model
+INFO  [alembic.runtime.migration] Running upgrade a2d606a761d9, 836c0bf75904 -> d2424a248d63, empty message
+INFO  [alembic.runtime.migration] Running upgrade d2424a248d63 -> 763d4b211ec9, fixing audit fk
+INFO  [alembic.runtime.migration] Running upgrade d2424a248d63 -> 1d2ddd543133, log dt
+INFO  [alembic.runtime.migration] Running upgrade 1d2ddd543133, 763d4b211ec9 -> fee7b758c130, empty message
+INFO  [alembic.runtime.migration] Running upgrade fee7b758c130 -> 867bf4f117f9, Adding extra field to Database model
+INFO  [alembic.runtime.migration] Running upgrade 867bf4f117f9 -> bb51420eaf83, add schema to table model
+INFO  [alembic.runtime.migration] Running upgrade bb51420eaf83 -> b4456560d4f3, change_table_unique_constraint
+INFO  [alembic.runtime.migration] Running upgrade b4456560d4f3 -> 4fa88fe24e94, owners_many_to_many
+INFO  [alembic.runtime.migration] Running upgrade 4fa88fe24e94 -> c3a8f8611885, Materializing permission
+INFO  [alembic.runtime.migration] Running upgrade c3a8f8611885 -> f0fbf6129e13, Adding verbose_name to tablecolumn
+INFO  [alembic.runtime.migration] Running upgrade f0fbf6129e13 -> 956a063c52b3, adjusting key length
+INFO  [alembic.runtime.migration] Running upgrade 956a063c52b3 -> 1226819ee0e3, Fix wrong constraint on table columns
+INFO  [alembic.runtime.migration] Running upgrade 1226819ee0e3 -> d8bc074f7aad, Add new field 'is_restricted' to SqlMetric and DruidMetric
+INFO  [alembic.runtime.migration] Running upgrade d8bc074f7aad -> 27ae655e4247, Make creator owners
+INFO  [alembic.runtime.migration] Running upgrade 27ae655e4247 -> 960c69cb1f5b, add dttm_format related fields in table_columns
+INFO  [alembic.runtime.migration] Running upgrade 960c69cb1f5b -> f162a1dea4c4, d3format_by_metric
+INFO  [alembic.runtime.migration] Running upgrade f162a1dea4c4 -> ad82a75afd82, Update models to support storing the queries.
+INFO  [alembic.runtime.migration] Running upgrade ad82a75afd82 -> 3c3ffe173e4f, add_sql_string_to_table
+INFO  [alembic.runtime.migration] Running upgrade 3c3ffe173e4f -> 41f6a59a61f2, database options for sql lab
+INFO  [alembic.runtime.migration] Running upgrade 41f6a59a61f2 -> 4500485bde7d, allow_run_sync_async
+INFO  [alembic.runtime.migration] Running upgrade 4500485bde7d -> 65903709c321, allow_dml
+INFO  [alembic.runtime.migration] Running upgrade 41f6a59a61f2 -> 33d996bcc382, update slice model
+INFO  [alembic.runtime.migration] Running upgrade 33d996bcc382, 65903709c321 -> b347b202819b, empty message
+INFO  [alembic.runtime.migration] Running upgrade b347b202819b -> 5e4a03ef0bf0, Add access_request table to manage requests to access datastores.
+INFO  [alembic.runtime.migration] Running upgrade 5e4a03ef0bf0 -> eca4694defa7, sqllab_setting_defaults
+INFO  [alembic.runtime.migration] Running upgrade eca4694defa7 -> ab3d66c4246e, add_cache_timeout_to_druid_cluster
+INFO  [alembic.runtime.migration] Running upgrade eca4694defa7 -> 3b626e2a6783, Sync DB with the models.py.
+WARNI [root] Constraint must have a name
+INFO  [alembic.runtime.migration] Running upgrade 3b626e2a6783, ab3d66c4246e -> ef8843b41dac, empty message
+INFO  [alembic.runtime.migration] Running upgrade ef8843b41dac -> b46fa1b0b39e, Add json_metadata to the tables table.
+INFO  [alembic.runtime.migration] Running upgrade b46fa1b0b39e -> 7e3ddad2a00b, results_key to query
+INFO  [alembic.runtime.migration] Running upgrade 7e3ddad2a00b -> ad4d656d92bc, Add avg() to default metrics
+INFO  [alembic.runtime.migration] Running upgrade ad4d656d92bc -> c611f2b591b8, dim_spec
+INFO  [alembic.runtime.migration] Running upgrade c611f2b591b8 -> e46f2d27a08e, materialize perms
+INFO  [alembic.runtime.migration] Running upgrade e46f2d27a08e -> f1f2d4af5b90, Enable Filter Select
+INFO  [alembic.runtime.migration] Running upgrade e46f2d27a08e -> 525c854f0005, log_this_plus
+INFO  [alembic.runtime.migration] Running upgrade 525c854f0005, f1f2d4af5b90 -> 6414e83d82b7, empty message
+INFO  [alembic.runtime.migration] Running upgrade 6414e83d82b7 -> 1296d28ec131, Adds params to the datasource (druid) table
+INFO  [alembic.runtime.migration] Running upgrade 1296d28ec131 -> f18570e03440, Add index on the result key to the query table.
+INFO  [alembic.runtime.migration] Running upgrade f18570e03440 -> bcf3126872fc, Add keyvalue table
+INFO  [alembic.runtime.migration] Running upgrade f18570e03440 -> db0c65b146bd, update_slice_model_json
+INFO  [alembic.runtime.migration] Running upgrade db0c65b146bd -> a99f2f7c195a, rewriting url from shortner with new format
+INFO  [alembic.runtime.migration] Running upgrade a99f2f7c195a, bcf3126872fc -> d6db5a5cdb5d, empty message
+INFO  [alembic.runtime.migration] Running upgrade d6db5a5cdb5d -> b318dfe5fb6c, adding verbose_name to druid column
+INFO  [alembic.runtime.migration] Running upgrade d6db5a5cdb5d -> 732f1c06bcbf, add fetch values predicate
+INFO  [alembic.runtime.migration] Running upgrade 732f1c06bcbf, b318dfe5fb6c -> ea033256294a, empty message
+INFO  [alembic.runtime.migration] Running upgrade b318dfe5fb6c -> db527d8c4c78, Add verbose name to DruidCluster and Database
+INFO  [alembic.runtime.migration] Running upgrade db527d8c4c78, ea033256294a -> 979c03af3341, empty message
+INFO  [alembic.runtime.migration] Running upgrade 979c03af3341 -> a6c18f869a4e, query.start_running_time
+INFO  [alembic.runtime.migration] Running upgrade a6c18f869a4e -> 2fcdcb35e487, saved_queries
+INFO  [alembic.runtime.migration] Running upgrade 2fcdcb35e487 -> a65458420354, add_result_backend_time_logging
+INFO  [alembic.runtime.migration] Running upgrade a65458420354 -> ca69c70ec99b, tracking_url
+INFO  [alembic.runtime.migration] Running upgrade ca69c70ec99b -> a9c47e2c1547, add impersonate_user to dbs
+INFO  [alembic.runtime.migration] Running upgrade ca69c70ec99b -> ddd6ebdd853b, annotations
+INFO  [alembic.runtime.migration] Running upgrade a9c47e2c1547, ddd6ebdd853b -> d39b1e37131d, empty message
+INFO  [alembic.runtime.migration] Running upgrade ca69c70ec99b -> 19a814813610, Adding metric warning_text
+INFO  [alembic.runtime.migration] Running upgrade 19a814813610, a9c47e2c1547 -> 472d2f73dfd4, empty message
+INFO  [alembic.runtime.migration] Running upgrade 472d2f73dfd4, d39b1e37131d -> f959a6652acd, empty message
+INFO  [alembic.runtime.migration] Running upgrade f959a6652acd -> 4736ec66ce19, empty message
+/home/fedora/superset/.tox/py38/lib64/python3.8/site-packages/sqlalchemy/dialects/sqlite/base.py:1981: SAWarning: WARNING: SQL-parsed foreign key constraint '('datasource_name', 'datasources', 'datasource_name')' could not be located in PRAGMA foreign_keys for table metrics
+  util.warn(
+INFO  [alembic.runtime.migration] Running upgrade 4736ec66ce19 -> 67a6ac9b727b, update_spatial_params
+INFO  [alembic.runtime.migration] Running upgrade 67a6ac9b727b -> 21e88bc06c02, migrate_old_annotation_layers
+INFO  [alembic.runtime.migration] Running upgrade 21e88bc06c02 -> e866bd2d4976, smaller_grid
+Revision ID: e866bd2d4976
+Revises: 21e88bc06c02
+Create Date: 2018-02-13 08:07:40.766277
+INFO  [alembic.runtime.migration] Running upgrade e866bd2d4976 -> e68c4473c581, allow_multi_schema_metadata_fetch
+INFO  [alembic.runtime.migration] Running upgrade e68c4473c581 -> f231d82b9b26, empty message
+INFO  [alembic.runtime.migration] Running upgrade f231d82b9b26 -> bf706ae5eb46, cal_heatmap_metric_to_metrics
+INFO  [alembic.runtime.migration] Running upgrade f231d82b9b26 -> 30bb17c0dc76, empty message
+INFO  [alembic.runtime.migration] Running upgrade 30bb17c0dc76, bf706ae5eb46 -> c9495751e314, empty message
+INFO  [alembic.runtime.migration] Running upgrade f231d82b9b26 -> 130915240929, is_sqllab_view
+INFO  [alembic.runtime.migration] Running upgrade 130915240929, c9495751e314 -> 5ccf602336a0, empty message
+INFO  [alembic.runtime.migration] Running upgrade 5ccf602336a0 -> e502db2af7be, add template_params to tables
+INFO  [alembic.runtime.migration] Running upgrade e502db2af7be -> c5756bec8b47, Time grain SQLA
+INFO  [alembic.runtime.migration] Running upgrade c5756bec8b47 -> afb7730f6a9c, remove empty filters
+INFO  [alembic.runtime.migration] Running upgrade afb7730f6a9c -> 80a67c5192fa, single pie chart metric
+INFO  [alembic.runtime.migration] Running upgrade 80a67c5192fa -> bddc498dd179, adhoc filters
+INFO  [alembic.runtime.migration] Running upgrade bddc498dd179 -> 4451805bbaa1, remove double percents
+INFO  [alembic.runtime.migration] Running upgrade bddc498dd179 -> 3dda56f1c4c6, Migrate num_period_compare and period_ratio_type
+INFO  [alembic.runtime.migration] Running upgrade 3dda56f1c4c6 -> 1d9e835a84f9, empty message
+INFO  [alembic.runtime.migration] Running upgrade 4451805bbaa1, 1d9e835a84f9 -> 705732c70154, empty message
+INFO  [alembic.runtime.migration] Running upgrade 4451805bbaa1, 1d9e835a84f9 -> fc480c87706c, empty message
+INFO  [alembic.runtime.migration] Running upgrade fc480c87706c -> bebcf3fed1fe, Migrate dashboard position_json data from V1 to V2
+INFO  [alembic.runtime.migration] Running upgrade bebcf3fed1fe, 705732c70154 -> ec1f88a35cc6, empty message
+INFO  [alembic.runtime.migration] Running upgrade 4451805bbaa1, 1d9e835a84f9 -> e3970889f38e, empty message
+INFO  [alembic.runtime.migration] Running upgrade 705732c70154, e3970889f38e -> 46ba6aaaac97, empty message
+INFO  [alembic.runtime.migration] Running upgrade 46ba6aaaac97, ec1f88a35cc6 -> c18bd4186f15, empty message
+INFO  [alembic.runtime.migration] Running upgrade c18bd4186f15 -> 7fcdcde0761c, Reduce position_json size by remove extra space and component id prefix
+INFO  [alembic.runtime.migration] Running upgrade 7fcdcde0761c -> 0c5070e96b57, add user attributes table
+INFO  [alembic.runtime.migration] Running upgrade 0c5070e96b57 -> 1a1d627ebd8e, position_json
+INFO  [alembic.runtime.migration] Running upgrade 1a1d627ebd8e -> 55e910a74826, add_metadata_column_to_annotation_model.py
+INFO  [alembic.runtime.migration] Running upgrade 55e910a74826 -> 4ce8df208545, empty message
+INFO  [alembic.runtime.migration] Running upgrade 4ce8df208545 -> 46f444d8b9b7, remove_coordinator_from_druid_cluster_model.py
+INFO  [alembic.runtime.migration] Running upgrade 46f444d8b9b7 -> a61b40f9f57f, remove allow_run_sync
+INFO  [alembic.runtime.migration] Running upgrade a61b40f9f57f -> 6c7537a6004a, models for email reports
+INFO  [alembic.runtime.migration] Running upgrade 6c7537a6004a -> 3e1b21cd94a4, change_owner_to_m2m_relation_on_datasources.py
+INFO  [alembic.runtime.migration] Running upgrade 6c7537a6004a -> cefabc8f7d38, Increase size of name column in ab_view_menu
+INFO  [alembic.runtime.migration] Running upgrade 55e910a74826 -> 0b1f1ab473c0, Add extra column to Query
+INFO  [alembic.runtime.migration] Running upgrade 0b1f1ab473c0, cefabc8f7d38, 3e1b21cd94a4 -> de021a1ca60d, empty message
+INFO  [alembic.runtime.migration] Running upgrade de021a1ca60d -> fb13d49b72f9, better_filters
+INFO  [alembic.runtime.migration] Running upgrade fb13d49b72f9 -> a33a03f16c4a, Add extra column to SavedQuery
+INFO  [alembic.runtime.migration] Running upgrade 4451805bbaa1, 1d9e835a84f9 -> c829ff0b37d0, empty message
+INFO  [alembic.runtime.migration] Running upgrade c829ff0b37d0 -> 7467e77870e4, remove_aggs
+INFO  [alembic.runtime.migration] Running upgrade 7467e77870e4, de021a1ca60d -> fbd55e0f83eb, empty message
+INFO  [alembic.runtime.migration] Running upgrade fbd55e0f83eb, fb13d49b72f9 -> 8b70aa3d0f87, empty message
+INFO  [alembic.runtime.migration] Running upgrade 8b70aa3d0f87, a33a03f16c4a -> 18dc26817ad2, empty message
+INFO  [alembic.runtime.migration] Running upgrade 18dc26817ad2 -> c617da68de7d, form nullable
+INFO  [alembic.runtime.migration] Running upgrade c617da68de7d -> c82ee8a39623, Add implicit tags
+INFO  [alembic.runtime.migration] Running upgrade 18dc26817ad2 -> e553e78e90c5, add_druid_auth_py.py
+INFO  [alembic.runtime.migration] Running upgrade e553e78e90c5, c82ee8a39623 -> 45e7da7cfeba, empty message
+INFO  [alembic.runtime.migration] Running upgrade 45e7da7cfeba -> 80aa3f04bc82, Add Parent ids in dashboard layout metadata
+INFO  [alembic.runtime.migration] Running upgrade 80aa3f04bc82 -> d94d33dbe938, form strip
+INFO  [alembic.runtime.migration] Running upgrade d94d33dbe938 -> 937d04c16b64, update datasources
+INFO  [alembic.runtime.migration] Running upgrade 937d04c16b64 -> 7f2635b51f5d, update base columns
+INFO  [alembic.runtime.migration] Running upgrade 7f2635b51f5d -> e9df189e5c7e, update base metrics
+INFO  [alembic.runtime.migration] Running upgrade e9df189e5c7e -> afc69274c25a, update the sql, select_sql, and executed_sql columns in the
+   query table in mysql dbs to be long text columns
+INFO  [alembic.runtime.migration] Running upgrade afc69274c25a -> d7c1a0d6f2da, Remove limit used from query model
+INFO  [alembic.runtime.migration] Running upgrade d7c1a0d6f2da -> ab8c66efdd01, resample
+INFO  [alembic.runtime.migration] Running upgrade ab8c66efdd01 -> b4a38aa87893, deprecate database expression
+INFO  [alembic.runtime.migration] Running upgrade b4a38aa87893 -> d6ffdf31bdd4, Add published column to dashboards
+INFO  [alembic.runtime.migration] Running upgrade d6ffdf31bdd4 -> 190188938582, Remove duplicated entries in dashboard_slices table and add unique constraint
+INFO  [alembic.runtime.migration] Running upgrade 190188938582 -> def97f26fdfb, Add index to tagged_object
+INFO  [alembic.runtime.migration] Running upgrade def97f26fdfb -> 11c737c17cc6, deprecate_restricted_metrics
+INFO  [alembic.runtime.migration] Running upgrade 11c737c17cc6 -> 258b5280a45e, form strip leading and trailing whitespace
+INFO  [alembic.runtime.migration] Running upgrade 258b5280a45e -> 1495eb914ad3, time range
+INFO  [alembic.runtime.migration] Running upgrade 1495eb914ad3 -> b6fa807eac07, make_names_non_nullable
+INFO  [alembic.runtime.migration] Running upgrade b6fa807eac07 -> cca2f5d568c8, add encrypted_extra to dbs
+INFO  [alembic.runtime.migration] Running upgrade cca2f5d568c8 -> c2acd2cf3df2, alter type of dbs encrypted_extra
+INFO  [alembic.runtime.migration] Running upgrade c2acd2cf3df2 -> 78ee127d0d1d, reconvert legacy filters into adhoc
+INFO  [alembic.runtime.migration] Running upgrade 78ee127d0d1d -> db4b49eb0782, Add tables for SQL Lab state
+INFO  [alembic.runtime.migration] Running upgrade db4b49eb0782 -> 5afa9079866a, serialize_schema_permissions.py
+INFO  [alembic.runtime.migration] Running upgrade 5afa9079866a -> 89115a40e8ea, Change table schema description to long text
+INFO  [alembic.runtime.migration] Running upgrade 89115a40e8ea -> 817e1c9b09d0, add_not_null_to_dbs_sqlalchemy_url
+INFO  [alembic.runtime.migration] Running upgrade 817e1c9b09d0 -> e96dbf2cfef0, datasource_cluster_fk
+INFO  [alembic.runtime.migration] Running upgrade e96dbf2cfef0 -> 3325d4caccc8, empty message
+INFO  [alembic.runtime.migration] Running upgrade 3325d4caccc8 -> 0a6f12f60c73, add_role_level_security
+INFO  [alembic.runtime.migration] Running upgrade 0a6f12f60c73 -> 72428d1ea401, Add tmp_schema_name to the query object.
+INFO  [alembic.runtime.migration] Running upgrade 72428d1ea401 -> b5998378c225, add certificate to dbs
+INFO  [alembic.runtime.migration] Running upgrade b5998378c225 -> f9a30386bd74, cleanup_time_grainularity
+INFO  [alembic.runtime.migration] Running upgrade f9a30386bd74 -> 620241d1153f, update time_grain_sqla
+INFO  [alembic.runtime.migration] Running upgrade 620241d1153f -> 743a117f0d98, Add slack to the schedule
+INFO  [alembic.runtime.migration] Running upgrade 743a117f0d98 -> e557699a813e, add_tables_relation_to_row_level_security
+INFO  [alembic.runtime.migration] Running upgrade e557699a813e -> ea396d202291, Add ctas_method to the Query object
+INFO  [alembic.runtime.migration] Running upgrade ea396d202291 -> a72cb0ebeb22, deprecate dbs.perm column
+INFO  [alembic.runtime.migration] Running upgrade a72cb0ebeb22 -> 2f1d15e8a6af, add_alerts
+INFO  [alembic.runtime.migration] Running upgrade 2f1d15e8a6af -> f2672aa8350a, add_slack_to_alerts
+INFO  [alembic.runtime.migration] Running upgrade f2672aa8350a -> f120347acb39, Add extra column to tables and metrics
+INFO  [alembic.runtime.migration] Running upgrade f2672aa8350a -> 978245563a02, Migrate iframe in dashboard to markdown component
+INFO  [alembic.runtime.migration] Running upgrade 978245563a02, f120347acb39 -> f80a3b88324b, empty message
+INFO  [alembic.runtime.migration] Running upgrade f80a3b88324b -> 2e5a0ee25ed4, refractor_alerting
+INFO  [alembic.runtime.migration] Running upgrade f80a3b88324b -> 175ea3592453, Add cache to datasource lookup table.
+INFO  [alembic.runtime.migration] Running upgrade 175ea3592453, 2e5a0ee25ed4 -> ae19b4ee3692, empty message
+INFO  [alembic.runtime.migration] Running upgrade ae19b4ee3692 -> e5ef6828ac4e, add rls filter type and grouping key
+INFO  [alembic.runtime.migration] Running upgrade e5ef6828ac4e -> 3fbbc6e8d654, fix data access permissions for virtual datasets
+INFO  [alembic.runtime.migration] Running upgrade 3fbbc6e8d654 -> 18532d70ab98, Delete table_name unique constraint in mysql
+INFO  [alembic.runtime.migration] Running upgrade 18532d70ab98 -> b56500de1855, add_uuid_column_to_import_mixin
+INFO  [alembic.runtime.migration] Running upgrade b56500de1855 -> af30ca79208f, Collapse alerting models into a single one
+INFO  [alembic.runtime.migration] Running upgrade af30ca79208f -> 585b0b1a7b18, add exec info to saved queries
+INFO  [alembic.runtime.migration] Running upgrade 585b0b1a7b18 -> 96e99fb176a0, add_import_mixing_to_saved_query
+INFO  [alembic.runtime.migration] Running upgrade 96e99fb176a0 -> 49b5a32daba5, add report schedules
+INFO  [alembic.runtime.migration] Running upgrade 49b5a32daba5 -> a8173232b786, Add path to logs
+INFO  [alembic.runtime.migration] Running upgrade a8173232b786 -> e38177dbf641, security converge saved queries
+INFO  [alembic.runtime.migration] Running upgrade e38177dbf641 -> 8ee129739cf9, security converge css templates
+INFO  [alembic.runtime.migration] Running upgrade 8ee129739cf9 -> 811494c0cc23, Remove path, path_no_int, and ref from logs
+INFO  [alembic.runtime.migration] Running upgrade 811494c0cc23 -> 5daced1f0e76, reports add working_timeout column
+INFO  [alembic.runtime.migration] Running upgrade 5daced1f0e76 -> 40f16acf1ba7, security converge reports
+INFO  [alembic.runtime.migration] Running upgrade 40f16acf1ba7 -> ccb74baaa89b, security converge charts
+INFO  [alembic.runtime.migration] Running upgrade ccb74baaa89b -> c25cb2c78727, security converge annotations
+INFO  [alembic.runtime.migration] Running upgrade c25cb2c78727 -> 45731db65d9c, security converge datasets
+INFO  [alembic.runtime.migration] Running upgrade 45731db65d9c -> 4b84f97828aa, security converge logs
+INFO  [alembic.runtime.migration] Running upgrade 4b84f97828aa -> 1f6dca87d1a2, security converge dashboards
+INFO  [alembic.runtime.migration] Running upgrade 1f6dca87d1a2 -> 42b4c9e01447, security converge databases
+INFO  [alembic.runtime.migration] Running upgrade 42b4c9e01447 -> e37912a26567, security converge queries
+INFO  [alembic.runtime.migration] Running upgrade e37912a26567 -> ab104a954a8f, reports alter crontab size
+INFO  [alembic.runtime.migration] Running upgrade ab104a954a8f -> 73fd22e742ab, add_dynamic_plugins.py
+INFO  [alembic.runtime.migration] Running upgrade 73fd22e742ab -> c878781977c6, alert reports shared uniqueness
+INFO  [alembic.runtime.migration] Running upgrade c878781977c6 -> 260bf0649a77, migrate [x dateunit] to [x dateunit ago/later]
+INFO  [alembic.runtime.migration] Running upgrade 260bf0649a77 -> e11ccdd12658, add roles relationship to dashboard
+INFO  [alembic.runtime.migration] Running upgrade e11ccdd12658 -> 41ce8799acc3, rename pie label type
+INFO  [alembic.runtime.migration] Running upgrade 41ce8799acc3 -> 070c043f2fdb, add granularity to charts where missing
+INFO  [alembic.runtime.migration] Running upgrade 070c043f2fdb -> c501b7c653a3, add missing uuid column
+INFO  [alembic.runtime.migration] Running upgrade c501b7c653a3 -> 1412ec1e5a7b, legacy force directed to echart
+
+Cleaning up slice uuid from dashboard position json..Cleaning up slice uuid from dashboard position json.. Done.      
+
+Updated 0 pie chart labels.
+0 slices altered
+
+Cleaning up slice uuid from dashboard position json..Cleaning up slice uuid from dashboard position json.. Done.      
+
+py38 run-test: commands[1] | superset init
+SQLite Database support for metadata databases will be removed in a future version of Superset.
+logging was configured successfully
+INFO:superset.utils.logging_configurator:logging was configured successfully
+Syncing role definition
+INFO:superset.security.manager:Syncing role definition
+Syncing Admin perms
+INFO:superset.security.manager:Syncing Admin perms
+Syncing Alpha perms
+INFO:superset.security.manager:Syncing Alpha perms
+Syncing Gamma perms
+INFO:superset.security.manager:Syncing Gamma perms
+Syncing granter perms
+INFO:superset.security.manager:Syncing granter perms
+Syncing sql_lab perms
+INFO:superset.security.manager:Syncing sql_lab perms
+Fetching a set of all perms to lookup which ones are missing
+INFO:superset.security.manager:Fetching a set of all perms to lookup which ones are missing
+Creating missing datasource permissions.
+INFO:superset.security.manager:Creating missing datasource permissions.
+Creating missing database permissions.
+INFO:superset.security.manager:Creating missing database permissions.
+Cleaning faulty perms
+INFO:superset.security.manager:Cleaning faulty perms
+py38 run-test: commands[2] | pytest -s tests/feature_flag_tests.py
+SQLite Database support for metadata databases will be removed in a future version of Superset.
+logging was configured successfully
+INFO:superset.utils.logging_configurator:logging was configured successfully
+============================= test session starts ==============================
+platform linux -- Python 3.8.7, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+cachedir: .tox/py38/.pytest_cache
+rootdir: /home/fedora/superset, configfile: pytest.ini
+plugins: cov-2.10.1, celery-4.4.7
+collected 3 items
+
+tests/feature_flag_tests.py Creating database reference for examples
+INFO:superset.utils.core:Creating database reference for examples
+Syncing role definition
+INFO:superset.security.manager:Syncing role definition
+Syncing Admin perms
+INFO:superset.security.manager:Syncing Admin perms
+Syncing Alpha perms
+INFO:superset.security.manager:Syncing Alpha perms
+Syncing Gamma perms
+INFO:superset.security.manager:Syncing Gamma perms
+Syncing granter perms
+INFO:superset.security.manager:Syncing granter perms
+Syncing sql_lab perms
+INFO:superset.security.manager:Syncing sql_lab perms
+Fetching a set of all perms to lookup which ones are missing
+INFO:superset.security.manager:Fetching a set of all perms to lookup which ones are missing
+Creating missing datasource permissions.
+INFO:superset.security.manager:Creating missing datasource permissions.
+Creating missing database permissions.
+INFO:superset.security.manager:Creating missing database permissions.
+Cleaning faulty perms
+INFO:superset.security.manager:Cleaning faulty perms
+Creating default CSS templates
+...
+
+=============================== warnings summary ===============================
+.tox/py38/lib/python3.8/site-packages/wtforms/ext/sqlalchemy/__init__.py:3
+  /home/fedora/superset/.tox/py38/lib/python3.8/site-packages/wtforms/ext/sqlalchemy/__init__.py:3: DeprecationWarning: 'wtforms.ext.sqlalchemy' will be removed in WTForms 3.0. Use WTForms-SQLAlchemy https://github.com/wtforms/wtforms-sqlalchemy or WTForms-Alchemy https://github.com/kvesteri/wtforms-alchemy instead.
+    warnings.warn(
+
+superset/config.py:23
+  /home/fedora/superset/superset/config.py:23: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+    import imp
+
+.tox/py38/lib/python3.8/site-packages/sqlalchemy_utils/types/encrypted/encrypted_type.py:453
+.tox/py38/lib/python3.8/site-packages/sqlalchemy_utils/types/encrypted/encrypted_type.py:453
+.tox/py38/lib/python3.8/site-packages/sqlalchemy_utils/types/encrypted/encrypted_type.py:453
+.tox/py38/lib/python3.8/site-packages/sqlalchemy_utils/types/encrypted/encrypted_type.py:453
+  /home/fedora/superset/.tox/py38/lib/python3.8/site-packages/sqlalchemy_utils/types/encrypted/encrypted_type.py:453: DeprecationWarning: The 'EncryptedType' class will change implementation from 'LargeBinary' to 'String' in a future version. Use 'StringEncryptedType' to use the 'String' implementation.
+    warnings.warn(
+
+.tox/py38/lib/python3.8/site-packages/flask/_compat.py:139
+  /home/fedora/superset/.tox/py38/lib/python3.8/site-packages/flask/_compat.py:139: DeprecationWarning: 'flask.json_available' is deprecated and will be removed in version 2.0.0.
+    self._warn()
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 3 passed, 7 warnings in 9.07s =========================
+___________________________________ summary ____________________________________
+  py38: commands succeeded
+  congratulations :)
